@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --brown: hsl(30, 10%, 34%);
+    --charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background-color: var(--eggshell);
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+body p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    color: var(--nutmeg);
+}
+
+.hr {
+    color: var(--light-grey);
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.container{
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: inline-block;
+    width: 700px;
+}
+
+.container img{
+    object-fit: contain;
+}
+
+.header h1{
+    font-family: 'Young Serif', serif;
+    padding-top: 1em;
+}
+
+.header p{
+    padding-top: 1em;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.container-preptime{
+    background-color: var(--rose-white);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+}
+
+.container-preptime h1{
+    color: var(--dark-raspberry);
+}
+
+.container-preptime ul{
+    margin: 0.5rem;
+    list-style-position: outside;
+}
+
+.container-preptime li{
+    margin: 1rem;
+    padding-left: 1.5rem;
+}
+
+.container-preptime li::marker{
+    color: var(--dark-raspberry);
+}
+
+.ingredients {
+    padding: 1em;
+}
+
+.ingredients ul{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.ingredients li{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.ingredients li::marker{
+    color: var(--nutmeg);
+}
+
+.instructions {
+    padding: 1em;
+}
+
+.instructions ol{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.instructions li {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+
+.instructions li::marker{
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+.nutrition {
+    padding: 1em 0.5em 0em 0.5em;
+}
+
+.nutrition .wrapper {
+    margin-right: 20%;
+    padding-top: 1rem;
+}
+
+.nutrition .wrapper hr{
+    width: 636px;
+}
+
+.nutrition .row {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.nutrition .col-one {
+    margin-right: 55%;
+}
+
+.nutrition .col-two {
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 300px;
+    }
+}
